@@ -1,6 +1,7 @@
 import React from "react";
 import Cardd from "./Cardd";
 import { Data } from "./Data";
+import Slide from "react-reveal"
 
 const Bollywood = () => {
     function loopImgs(item) {
@@ -12,14 +13,12 @@ const Bollywood = () => {
         />
     }
     return (<div className="cards">
-        <h4>Bollywood</h4>
-        <div className="cards-imgs">
-            {Data.map(loopImgs)}
-
-
-        </div>
-
-
+        <Slide left>
+            <h4>Bollywood</h4>
+            <div className="cards-imgs">
+                {Data.map(loopImgs)}
+            </div>
+        </Slide>
     </div>)
 }
 export default Bollywood;

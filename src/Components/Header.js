@@ -1,4 +1,6 @@
 import react, { useEffect, useRef, useState } from "react";
+import Slide from 'react-reveal/Slide';
+
 
 const Header = () => {
     const ref = useRef()
@@ -32,6 +34,7 @@ useEffect(() => {
   }, [state])
     return (
         <div className="main">
+        
         <div className="header">
             <div className="header-menu">
                 <h2>MainStream</h2>
@@ -39,6 +42,7 @@ useEffect(() => {
             </div>
                 {state ? ab : null}
         </div>
+        
         </div>
     )
 }
