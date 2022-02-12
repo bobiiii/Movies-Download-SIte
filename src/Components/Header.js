@@ -4,10 +4,10 @@ const Header = () => {
     const ref = useRef()
     let [state,setState] = useState(false)
     let toggle=()=>{
-        setState(oldState => !oldState)
-    }
+        setState(!state)
+    };
     console.log(state);
-    let ab = <div ref={ref} className="btnd"><ul><li>Netflix</li>
+    let ab = <div  className="btnd"><ul><li>Netflix</li>
     <li>Bollywood</li>
     <li>Hollywood</li>
     </ul></div>
@@ -35,7 +35,7 @@ useEffect(() => {
         <div className="header">
             <div className="header-menu">
                 <h2>MainStream</h2>
-                <button className="btn" onClick={toggle}>☰</button>
+                <button ref={ref}  className="btn" onClick={toggle}>☰</button>
             </div>
                 {state ? ab : null}
         </div>
