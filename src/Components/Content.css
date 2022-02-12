@@ -1,0 +1,30 @@
+.content{
+    padding: 10px;
+    
+}
+.cards{
+    text-align: center;
+    background-color: rgb(235, 235, 235);
+    width: 100%;
+    height: 35vh;
+    margin: 20px 0px;
+    border-radius: 10px;
+    box-shadow: gray -6px 10px 15px 2px;
+}
+.cards-imgs{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: scroll;
+}
+.img-box{
+    width: 100%;
+    height: 90%;
+    margin:  5px 4px;
+    
+}
+.img-box > img{
+width: 100px;
+height: 75%;
+border-radius: 10%;
+}
